@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell">
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="horizontal|vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@color/colorWhite">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:scrollbars="horizontal|vertical"
+            android:background="@color/colorWhite">
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="0"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:background="@color/colorWhite"
+                >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <Button android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="Buy"
+                            android:onClick="gotoBuy"
+                            />
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="Sell"
+                            />
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="Rent"
+                            android:onClick="gotoRent"
+                            />
+
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/bayout_hrz"
+                        android:contentDescription="@string/app_name" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Traffic Sign Board</string>
+    <string name="title">Registration Form</string>
+    <string name="register_button_label">Register User</string>
+    <string name="login_button_label">Login User</string>
+    <string name="prdict_button_label">Predict</string>
+    <string name="textview">course 1</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date of Birth : Please select Date</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="default_number">Enter your course score</string>
+    <string name="error_6_char_length">Password minimum Contain 6 Character</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="mandatory_field">This is mandatory field</string>
+    <string name="valid_email_format">Enter valid email address</string>
+    <string name="Username">Username</string>
+    <string name="login_id_label">Login ID (Email used to create account)</string>
+    <string name="game_rules">About this app:\n\nThis app is Deep Learning powered Traffic Sign recognition.\nUser can capture images of unknown traffic sign boards. Application will predict those signs. Signs can be remembered for users history.</string>
+    <string name="startquiz">Start Quiz</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="realEstateImage">Developer:\nPadmajeet Mhaske\n\nProject Guidance:\nDr. Wang Jiyan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="parcel_question">question</string>
+    <string name="actionbar_title">Guess Flower</string>
+</resources>

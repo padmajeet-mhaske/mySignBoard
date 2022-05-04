@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context=".QuestionFragment"
+    android:label="@string/actionbar_title"
+    android:background="@color/colorWhite">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/tv_frg_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <LinearLayout
+        android:id="@+id/ll_frg_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_frg_question"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_frg_err_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_frg_question"
+        android:text="Please select atleast one option"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Tooltip"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/bt_frg_next_ques"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/bt_frg_prev_ques"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Prev" />
+
+</RelativeLayout>
